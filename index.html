@@ -3,61 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Veerbhadra Enterprises</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
 body {
-  margin:0;
-  font-family:Poppins;
-  background:#f5f1ea;
-  text-align:center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f5f1;
+    color: #222;
 }
 
-nav {
-  background:#fff;
-  padding:10px;
+header {
+    padding: 15px;
+    text-align: center;
+    background: white;
 }
 
-h1 {
-  margin-top:30px;
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
 }
 
-button {
-  padding:10px 20px;
-  margin:10px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
 }
 
 .primary {
-  background:#c8a46b;
-  color:white;
+    background: #c79a5d;
+    color: white;
 }
 
-.dark {
-  background:#444;
-  color:white;
+.secondary {
+    background: #333;
+    color: white;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
 }
 </style>
-
 </head>
 
 <body>
 
-<nav>
-  Home | Products | Contact
-</nav>
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-<h1>Fresh Quality You Can Taste</h1>
+<section class="hero">
+    <h1>Fresh Quality You Can Taste</h1>
+    <p>Dry fruits, spices, and seeds available at our store.</p>
+    <button class="btn primary">Order on WhatsApp</button>
+    <button class="btn secondary">Call Us</button>
+</section>
 
-<p>Dry fruits, spices, and seeds available at our store.</p>
+<section class="section">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="card">Almonds & Nuts</div>
+        <div class="card">Pure Spices</div>
+        <div class="card">Seeds & More</div>
+    </div>
+</section>
 
-<button class="primary">Order on WhatsApp</button>
-<button class="dark">Call Us</button>
+<footer>
+    © 2026 Veerbhadra Enterprises
+</footer>
 
 </body>
 </html>
